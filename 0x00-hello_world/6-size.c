@@ -1,20 +1,15 @@
 #include <stdio.h> 
 
   
+/**
+ * main - prints the size of various types 
+ *
+ * Return: Returns 0 if program exits properly 
+ */ 
 
- /** 
+int main(void) 
 
-  * main - prints the size of various types 
-
-  * 
-
-  * Return: Returns 0 if program exits properly 
-
-  */ 
-
- int main(void) 
-
- { 
+{ 
 
          printf("Size of a char: %d byte(s)\n", sizeof(char)); 
 
@@ -29,5 +24,4 @@
   
 
          return (0); 
-
- }
+}
