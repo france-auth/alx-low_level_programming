@@ -1,37 +1,24 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-  
+/** 
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
 
- /** 
+int main(void)
+{
+	int i = 48;
 
-  * main - Entry point 
+	while (i < 58)
+	{
+		putchar(i);
 
-  * 
+		i++;
+	}
 
-  * Return: Always 0 
+	putchar('\n');
 
-  */ 
+	return (0);
 
- int main(void) 
-
- { 
-
-         int i = 48; 
-
-  
-
-         while (i < 58) 
-
-         { 
-
-                 putchar(i); 
-
-                 i++; 
-
-         } 
-
-         putchar('\n'); 
-
-         return (0); 
-
- }
+}
