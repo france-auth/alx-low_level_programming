@@ -1,39 +1,25 @@
-#include <stdio.h> 
+#include <stdio.h>
 
- /** 
+/**
+ *main - This prints the alphabet from A-z
+ *
+ *Return: Always 0
+ *
+ */
 
-   *main - This prints the alphabet from A-z 
+int main(void)
+{
+	char a = 'a';
 
-   *Return: Always 0 
+	while (a <= 'z')
+	{
+		putchar(a);
 
-   */ 
+		a++;
+         }
 
- int main(void) 
+	putchar('\n');
 
- { 
+	return (0);
 
-         char a = 'a'; 
-
-  
-
-         while (a <= 'z') 
-
-         { 
-
-                 putchar(a); 
-
-                 a++; 
-
-  
-
-         } 
-
-  
-
-         putchar('\n'); 
-
-         return (0); 
-
-  
-
- }
+}

@@ -1,53 +1,47 @@
-#include <stdlib.h> 
+#include <stdlib.h>
 
- #include <time.h> 
+#include <time.h>
 
- #include <stdio.h> 
+#include <stdio.h>
 
-  
 
- /** 
+/**
+ * main - prints the last digit of n and prints out whether it is
+ * greater than 5, 0, or less than 6
+ * Return: 0
+ */
 
-  * main - prints the last digit of n and prints out whether it is 
+int main(void)
 
-  * greater than 5, 0, or less than 6 
+{
 
-  * Return: 0 
+	int n;
 
-  */ 
+	int lastDigit;
 
- int main(void) 
 
- { 
+	srand(time(0));
 
-         int n; 
+	n = rand() - RAND_MAX / 2;
 
-         int lastDigit; 
 
-  
 
-         srand(time(0)); 
+	lastDigit = n % 10;
 
-         n = rand() - RAND_MAX / 2; 
+	printf("Last digit of %i is %i and is ", n, lastDigit);
 
-  
+	if (lastDigit > 5)
 
-         lastDigit = n % 10; 
+		printf("greater than 5\n");
 
-         printf("Last digit of %i is %i and is ", n, lastDigit); 
+	else if (lastDigit == 0)
 
-         if (lastDigit > 5) 
+		printf("0\n");
 
-                 printf("greater than 5\n"); 
+	else
 
-         else if (lastDigit == 0) 
+		printf("less than 6 and not 0\n");
 
-                 printf("0\n"); 
+	return (0);
 
-         else 
-
-                 printf("less than 6 and not 0\n"); 
-
-         return (0); 
-
- }
+}
