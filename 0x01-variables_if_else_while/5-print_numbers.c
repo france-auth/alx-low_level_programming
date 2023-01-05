@@ -1,31 +1,24 @@
-#include <stdio.h> 
+#include <stdio.h>
+#include <stdlib.h>
 
-  
+/**
+ * main - return single integer from 0-10
+ *
+ * Return: Always 0 (Success)
+ */
 
- /** 
+int main(void)
 
-  * main - Entry point 
+{
+	int num = 0;
 
-  * 
+	while (num < 10)
+	{
+		printf("%d", num);
+		num++;
+	}
+	putchar('\n');
 
-  * Return: 0 
+	return (0);
 
-  */ 
-
- int main(void) 
-
- { 
-
-         int a; 
-
-  
-
-         for (a = 0; a < 10; a++) 
-
-                 printf("%i", a); 
-
-         printf("\n"); 
-
-         return (0); 
-
- }
+}
