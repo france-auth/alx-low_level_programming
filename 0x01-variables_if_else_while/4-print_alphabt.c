@@ -1,33 +1,23 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-  
+/**
+ * main - Entry point
+ *
+ * Return: 0
+ */
 
- /** 
+int main(void)
+{
+	char b;
 
-  * main - Entry point 
+	for (b = 'a'; b <= 'z'; b++)
 
-  * 
+	if (b != 'q' && b != 'e')
 
-  * Return: 0 
+		putchar(b);
 
-  */ 
+		putchar('\n');
 
- int main(void) 
+	return (0);
 
- { 
-
-         char b; 
-
-  
-
-         for (b = 'a'; b <= 'z'; b++) 
-
-                 if (b != 'q' && b != 'e') 
-
-                         putchar(b); 
-
-         putchar('\n'); 
-
-         return (0); 
-
- }
+}
